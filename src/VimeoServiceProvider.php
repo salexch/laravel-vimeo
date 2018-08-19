@@ -118,7 +118,7 @@ class VimeoServiceProvider extends ServiceProvider
      *
      * @return string[]
      */
-    public function provides(): array
+    public function provides()
     {
         return [
             'vimeo',
