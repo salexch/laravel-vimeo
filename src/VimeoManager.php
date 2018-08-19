@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-declare(strict_types=1);
+//declare(strict_types=1);
 
 namespace Vinkla\Vimeo;
 
@@ -53,7 +53,7 @@ class VimeoManager extends AbstractManager
      *
      * @return \Vimeo\Vimeo
      */
-    protected function createConnection(array $config): Vimeo
+    protected function createConnection(array $config)//: Vimeo
     {
         return $this->factory->make($config);
     }
@@ -63,7 +63,7 @@ class VimeoManager extends AbstractManager
      *
      * @return string
      */
-    protected function getConfigName(): string
+    protected function getConfigName()//: string
     {
         return 'vimeo';
     }
@@ -73,7 +73,7 @@ class VimeoManager extends AbstractManager
      *
      * @return \Vinkla\Vimeo\VimeoFactory
      */
-    public function getFactory(): VimeoFactory
+    public function getFactory()//: VimeoFactory
     {
         return $this->factory;
     }
